@@ -1,0 +1,192 @@
+/*integrantes.css*/
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #1F2021;
+	font-family:Arial, Helvetica, sans-serif;
+	color: #757575;
+	background-image:url(images/fondo22.jpg);
+	/*background-repeat: no-repeat;*/
+	
+}
+
+ 
+
+p, ul, ol {
+	margin-top: 0;
+	line-height: 180%;
+}
+
+ 
+
+a {
+	text-decoration: none;
+	color: /*#BBBBBB;*/ red;
+}
+
+a:hover {
+}
+
+#cabecera {
+	width: 960px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+/*Header */
+
+#header {
+	width: 940px;
+	height: 70px;
+	margin: 0 auto;
+}
+
+/* Logo */
+
+#logo {
+	float: left;
+	height: 40px;
+	margin: 0;
+	color:#FFFFFF;
+}
+
+#logo h1 {
+	margin: 0;
+	padding: 0;
+	
+}
+
+#logo h1 a{
+	color:red;
+}
+
+#logo h1 {
+	float: left;
+	padding-left: 20px;
+	letter-spacing: -1px;
+	text-transform: lowercase;
+	font-size: 3.8em;
+	 
+}
+
+
+
+/* Menu */
+
+#menu {
+	width: 940px;
+	height: 36px;
+	margin: 0 auto;
+	padding: 0;
+	
+	background: url(images/img02.jpg) no-repeat left top;
+	font-family: Arial, Helvetica, sans-serif;
+}
+ 
+
+
+
+#menu ul {
+	margin: 0px 0px 0px 10px;
+	padding: 0;
+	list-style: none;
+	line-height: normal;
+}
+
+#menu li {
+	float: left;
+}
+
+#menu a {
+	display: block;
+	height: 26px;
+	margin-bottom: 10px;
+	padding: 10px 20px 0px 20px;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #FFFFFF;
+	border: none;
+}
+
+#menu a:hover, #menu .current_page_item a {
+	background: #2C2C2C;
+	text-decoration: none;
+}
+
+
+
+
+/*-------------------------------------------------*/
+
+
+/*section- aside*/
+.contenido, .contenido-lateral, .enacabezado
+{
+    float:left;
+    box-sizing: border-box;
+}
+
+
+ .encabezado /* nos olvidamos de los pixeles padding, margin
+todo lo que es ancho en %*/
+{
+    width: 20%;
+    background-color: none;
+    height: 10em; /*160px , unidad base por defecto*/
+}
+
+
+
+.contenido
+{
+    width: 60%;
+	padding: 1em 2em;  
+}
+
+.contenido-lateral
+{
+    width: 40%;
+    height: 30em; /* 30X16*/
+    background-color: none;
+    margin-top: 1em;
+
+
+}
+
+
+.posteo
+{
+    background-color: none;
+    height: 30em;
+    margin-bottom:1em;
+
+}
+
+ 
+
+/*------------------------------------------------------------------------*/
+
+#footer {
+	width: 940px;
+	height: 50px;
+	margin: 0 auto;
+	padding: 0px 0 15px 0;
+	border-top: 4px solid #292929;
+	font-family: Arial, Helvetica, sans-serif;
+	float:left;
+}
+
+#footer p {
+	margin: 0;
+	padding-top: 20px;
+	line-height: normal;
+	font-size: 10px;
+	text-transform: uppercase;
+	text-align: center;
+	color: #444444;
+}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset='UTF-8'>
+	
+	<title>Pearl Jam fan page</title>
+		
+		<link rel="stylesheet" href="proximoshows.css">
+		<link href="images/logo pearl.jpg"  rel="shortcut icon" />
+
+ 
+
+	
+	
+	 
+	<style>
+	
+	/* 
+	Max width before this PARTICULAR table gets nasty
+	This query will take effect for any screen smaller than 760px
+	and also iPads specifically.
+	*/
+	@media 
+	only screen and (max-width: 760px),
+	(min-device-width: 768px) and (max-device-width: 1024px)  {
+	
+		/* Force table to not be like tables anymore */
+		table, thead, tbody, th, td, tr { 
+			display: block; 
+		}
+		
+		/* Hide table headers (but not display: none;, for accessibility) */
+		thead tr { 
+			position: absolute;
+			top: -9999px;
+			left: -9999px;
+		}
+		
+		tr { border: 1px solid #ccc; }
+		
+		td { 
+			/* Behave  like a "row" */
+			border: none;
+			border-bottom: 1px solid #eee; 
+			position: relative;
+			padding-left: 50%; 
+		}
+		
+		td:before { 
+			/* Now like a table header */
+			position: absolute;
+			/* Top/left values mimic padding */
+			top: 6px;
+			left: 6px;
+			width: 45%; 
+			padding-right: 10px; 
+			white-space: nowrap;
+		}
+		
+		/*
+		Label the data
+		*/
+		td:nth-of-type(1):before { content: "Fecha"; }
+		td:nth-of-type(2):before { content: "Provincia/Pais"; }
+		td:nth-of-type(3):before { content: "Lugar"; }
+		 
+	}
+	
+	
+	
+	</style>
+	<!--<![endif]-->
+
+</head>
+
+<body>
+
+	<div id="cabecera">
+		<div id="header">
+			<div id="logo">
+				<h1><a>JAMERS </a></h1>
+				
+			</div>
+		</div>
+		
+	</div>
+		<div id="menu">
+			<ul>
+			<li><a href="muro.php" title="">muro</a></li>
+			<li><a href="integrantes.html" title="">Integrantes</a></li>
+			<li><a href="fotos.html" title="">Fotos</a></li>
+			<li><a href="sobremi.html" title="">Sobre mi</a></li>
+			<li><a href="contacto.php" title="">Iniciar sesion</a></li>
+			<!--<li><a href="#" title="">Contacts</a></li>-->
+			</ul>
+		</div>
+
+
+	<div id="page-wrap">
+
+	<h1>Proximos Shows:</h1>
+  
+	 
+    
+	
+    
+	<table>
+		<thead>
+		<tr>
+			<th>Fecha:</th>
+			<th>Provincia/Pais:</th>
+			<th>Lugar:</th>
+			 
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td>13/03/18</td>
+			<td>Santiago, <strong>Chile</strong></td>
+			<td>Movistar Arena</td>
+			 
+		</tr>
+		<tr>
+		  <td>16/03/18</td>
+		  <td>Santiagom <strong>Chile</strong></td>
+		  <td>Lollapalooza Chile</td>
+		  
+		</tr>
+		<tr>
+		  <td>18/03/18</td>
+		  <td>Buenos Aires, <strong>Argentina</strong></td>
+		  <td>Lollapalooza Argentina</td>
+		   
+		</tr>
+		<tr>
+		  <td>21/03/18</td>
+		  <td>Rio de Janeiro, <strong>Brazil</strong></td>
+		  <td>Estadio Maracaná</td>
+		   
+		</tr>
+		<tr>
+		  <td>24/03/18</td>
+		  <td>Sao Paulo, <strong>Brazil</strong></td>
+		  <td>Lollapalooza Brazil</td>
+		   
+		</tr>
+		</tbody>
+	</table>
+	
+	</div>
+		
+	<div id="footer">
+		<p>&copy;Todos los derechos reservados. Diseñado por: EL MENDO </p>
+	</div>
+</body>
+
+</html>
